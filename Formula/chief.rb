@@ -5,21 +5,21 @@
 class Chief < Formula
   desc "Autonomous agent loop for working through PRDs with Claude Code"
   homepage "https://minicodemonkey.github.io/chief/"
-  version "0.2.0"
+  version "0.3.0"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/MiniCodeMonkey/chief/releases/download/v0.2.0/chief_0.2.0_darwin_amd64.tar.gz"
-      sha256 "05b5714c1ac957b9f167f3fc67e271b9a38e0e9630fda8f2dfcc5455a09cf115"
+      url "https://github.com/MiniCodeMonkey/chief/releases/download/v0.3.0/chief_0.3.0_darwin_amd64.tar.gz"
+      sha256 "11ca64a88ca02b9b7b62540ffa01f8ef8c78efed272dea25e9a5df6f6abab2e1"
 
       def install
         bin.install "chief"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/MiniCodeMonkey/chief/releases/download/v0.2.0/chief_0.2.0_darwin_arm64.tar.gz"
-      sha256 "b82ca82133aaf57907b901b73cc6446ccba94d8e87d5c697ad3d319c9e7b350a"
+      url "https://github.com/MiniCodeMonkey/chief/releases/download/v0.3.0/chief_0.3.0_darwin_arm64.tar.gz"
+      sha256 "69bbf14761bc0dafe75e359ecd7813ea976d2ac0b480bbe4ebfc911095cb71a0"
 
       def install
         bin.install "chief"
@@ -29,15 +29,15 @@ class Chief < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/MiniCodeMonkey/chief/releases/download/v0.2.0/chief_0.2.0_linux_amd64.tar.gz"
-      sha256 "0f226dfc80d7857bbc6f5f8c4f3d75ac86d77a439542e306f85b8796f0286a50"
+      url "https://github.com/MiniCodeMonkey/chief/releases/download/v0.3.0/chief_0.3.0_linux_amd64.tar.gz"
+      sha256 "64074bed65b41c02bdca920cf6cc27952af28a27bfab5f9eb6ce538a39953b15"
       def install
         bin.install "chief"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/MiniCodeMonkey/chief/releases/download/v0.2.0/chief_0.2.0_linux_arm64.tar.gz"
-      sha256 "dd628bb10b0cf16e515797c5f4bffc55b5d436799e9fe23c6fc24bf184f20055"
+      url "https://github.com/MiniCodeMonkey/chief/releases/download/v0.3.0/chief_0.3.0_linux_arm64.tar.gz"
+      sha256 "c34001793d3d4fd150e041be4f6fbf6e2981254c2848fefc738d7969ccf5a4b2"
       def install
         bin.install "chief"
       end
