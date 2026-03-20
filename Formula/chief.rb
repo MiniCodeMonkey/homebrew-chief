@@ -5,21 +5,21 @@
 class Chief < Formula
   desc "Autonomous agent loop for working through PRDs with Claude Code"
   homepage "https://chiefloop.com"
-  version "0.7.0"
+  version "0.8.0"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/MiniCodeMonkey/chief/releases/download/v0.7.0/chief_0.7.0_darwin_amd64.tar.gz"
-      sha256 "4f2aa72987d79d426da5dc3b2ff04722777d769d3bbabe7526d138bfad39199d"
+      url "https://github.com/MiniCodeMonkey/chief/releases/download/v0.8.0/chief_0.8.0_darwin_amd64.tar.gz"
+      sha256 "5cee1ec06fc63c508e48029b3d4709f341d22633f58e4d93825a82a95c7484fc"
 
       define_method(:install) do
         bin.install "chief"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/MiniCodeMonkey/chief/releases/download/v0.7.0/chief_0.7.0_darwin_arm64.tar.gz"
-      sha256 "7456220ff6012c08e04233748224e5f97e28b9faa831a5fc1b32c0f6f754e72e"
+      url "https://github.com/MiniCodeMonkey/chief/releases/download/v0.8.0/chief_0.8.0_darwin_arm64.tar.gz"
+      sha256 "10629eeff66ee1c69f742d23c7be7d42ce7a1eea505d847e4b10a4f0dc4a6c76"
 
       define_method(:install) do
         bin.install "chief"
@@ -29,15 +29,15 @@ class Chief < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/MiniCodeMonkey/chief/releases/download/v0.7.0/chief_0.7.0_linux_amd64.tar.gz"
-      sha256 "8dd61b55970be21104ef270d72b045a69c7e779002ddff2ae0b65532834aaf7c"
+      url "https://github.com/MiniCodeMonkey/chief/releases/download/v0.8.0/chief_0.8.0_linux_amd64.tar.gz"
+      sha256 "cf0b4b5b4cbd3b27de065bd32489938f46f40ad16ff08b8e354274986255f3dc"
       define_method(:install) do
         bin.install "chief"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/MiniCodeMonkey/chief/releases/download/v0.7.0/chief_0.7.0_linux_arm64.tar.gz"
-      sha256 "2dffccc824a531781fd5f43e7a3feaec2fe99ad934a2286b06fd32688a51808b"
+      url "https://github.com/MiniCodeMonkey/chief/releases/download/v0.8.0/chief_0.8.0_linux_arm64.tar.gz"
+      sha256 "b0ea988385a3186e6c44cf96a35d3605899fc536551e173a74a36f5c36198e2c"
       define_method(:install) do
         bin.install "chief"
       end
